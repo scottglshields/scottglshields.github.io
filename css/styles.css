@@ -58,6 +58,8 @@ h3 {font-weight: 100;}
 
 a {color: var(--white, white); font-weight: 400;}
 
+a:hover {color: gold;}
+
 a[target="_blank"]::after {
 	content: '';
 	background: no-repeat var(--icon-external-link);
