@@ -1,116 +1,71 @@
-html {
-  --primary: #00D1B2;
-  --primary-dark: #13F1D0;
-  --accent: #E684AF;
-  --color: #D3C9E1;
-  --bg: #211630;
-}
-
-html.theme--day {
-  --primary: #00D1B2;
-  --primary-dark: #00B298;
-  --accent: #F9CA24;
-  --color: #535B6A;
-  --bg: #FFFFFF;
+:root {
+  --white: #ffffff;
+	--light: #f0eff3;
+	--black: #000000;
+	--dark-blue: #1f2029;
+	--dark-light: #353746;
+	--red: #da2c4d;
+	--yellow: #f8ab37;
+	--gray: #ecedf3;
+	--lightgray: #ececee;
+	--darkgray: #1f2029;
+  --purple: #8167a9;
+	--icon-external-link: url('data:image/svg+xml,\ <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"> \ <g style="stroke:white;stroke-width:1"> \ <line x1="5" y1="5" x2="5" y2="14" /> \ <line x1="14" y1="9" x2="14" y2="14" /> \ <line x1="5" y1="14" x2="14" y2="14" /> \ <line x1="5" y1="5" x2="9" y2="5"  /> \ <line x1="10" y1="2" x2="17" y2="2"  /> \ <line x1="17" y1="2" x2="17" y2="9" /> \ <line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.5" /> \ </g> \ </svg>');
 }
 
 *, *:before, *:after {box-sizing: border-box;}
 
-html {font-size: 60%;   width: 100%; height: 100%;}
+html {width: 100%; height: 100%; line-height: 1.5;}
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  background: var(--bg);
-  color: var(--color);
-  transition: color 120ms ease-out 0s;
-}
-
-a {
-  color: var(--primary);
-  text-decoration: none;
-  transition: all 120ms ease-out 0s;
-}
-
-a:hover, a:focus {color: var(--primary-dark);}
-
-header {
-  width: 100%;
-  max-width: 68rem;
-  margin: auto;
-  padding: 7.5vh 2.4rem 0;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 1.5;
-}
-
-@media screen and (max-width: 768px) {.h1 {font-size: 2.4rem;}}
-
-.c-theme-btn {
-  display: inline-block;
-  border: 0;
-  width: 3.2rem;
-  height: 3.2rem;
-  padding: 0;
-  border-radius: 50%;
-  background: var(--accent);
-  cursor: pointer;
-  margin-bottom: 2.4rem;
-  position: relative;
-  transition: all 240ms ease-out 0ms;
-}
-.c-theme-btn__inner {
-  transform: scale(1.5);
-  color: var(--accent);
-  transition: all 120ms ease-out 240ms;
-}
-.c-theme-btn:hover {
-  transform: scale(1.05) rotate(-15deg);
-}
-.c-theme-btn:before {
-  content: "";
-  position: absolute;
-  width: 3.2rem;
-  height: 3.2rem;
-  background: var(--bg);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: scale(0.5) translate(50%, -50%);
-  transform-origin: top right;
-  transition: transform 320ms ease-out 120ms;
-}
-.c-theme-btn:active, .c-theme-btn:focus {
-  outline: 0;
-}
-.c-theme-btn.is-active {
-  transform: rotate(-45deg);
-}
-.c-theme-btn.is-active .c-theme-btn__inner {
-  transform: scale(0.5);
-  opacity: 0;
-}
-.c-theme-btn.is-active:hover {
-  transform: scale(1.05) rotate(-60deg);
-}
-.c-theme-btn.is-active:before {
-  transform: scale(1) translate(0%, -50%);
-  transition: transform 320ms ease-out 0ms;
-}
-
-.c-social {
+  height: 100vh;
   display: flex;
-  margin-top: 2.4rem;
+  color: var(--lightgray, #ececee);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
 }
-.c-social__link {
-  font-weight: 600;
-  font-size: 1.4rem;
+
+section {
+  display: table;
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
 }
-.c-social__link:not(:last-of-type) {
-  margin-right: 2.4rem;
+
+article {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 200px; 
+  width: 200px;
+  color: var(--white, white); 
+  padding: 2rem;
+	overflow: hidden;
+	background-color: var(--darkgray, #1f2029);
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-repeat: repeat;
+	background-attachment: fixed;
+  background-position: center;
+  background-size: 4%;
+}
+
+h1 {font-size: 3.25rem; font-weight: 800;}
+
+h2 {font-weight: 400; margin-top: -2rem;}
+
+h3 {font-weight: 100;}
+
+a {color: var(--white, white); font-weight: 400;}
+
+a[target="_blank"]::after {
+	content: '';
+	background: no-repeat var(--icon-external-link);
+	padding-right: 1em;
+}
+
+@keyframes gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
 }
