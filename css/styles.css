@@ -66,6 +66,8 @@ a[target="_blank"]::after {
 	padding-right: 1em;
 }
 
+svg:hover {fill: gold;}
+
 @keyframes gradient {
 	0% {background-position: 0% 50%;}
 	50% {background-position: 100% 50%;}
