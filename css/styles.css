@@ -5,11 +5,11 @@
 	--dark-blue: #1f2029;
 	--dark-light: #353746;
 	--red: #da2c4d;
-	--yellow: #f8ab37;
+	--yellow: goldenrod, #f8ab37;
 	--gray: #ecedf3;
 	--lightgray: #ececee;
 	--darkgray: #1f2029;
-  --purple: #8167a9;
+        --purple: #8167a9;
 	--icon-external-link: url('data:image/svg+xml,\ <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"> \ <g style="stroke:white;stroke-width:1"> \ <line x1="5" y1="5" x2="5" y2="14" /> \ <line x1="14" y1="9" x2="14" y2="14" /> \ <line x1="5" y1="14" x2="14" y2="14" /> \ <line x1="5" y1="5" x2="9" y2="5"  /> \ <line x1="10" y1="2" x2="17" y2="2"  /> \ <line x1="17" y1="2" x2="17" y2="9" /> \ <line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.5" /> \ </g> \ </svg>');
 }
 
@@ -39,7 +39,7 @@ article {
   vertical-align: middle;
   height: 200px; 
   width: 200px;
-  color: var(--white, white); 
+  color: var(--white); 
   padding: 2rem;
 	overflow: hidden;
 	background-color: var(--darkgray, #1f2029);
@@ -56,9 +56,9 @@ h2 {font-weight: 400; margin-top: -2rem;}
 
 h3 {font-weight: 100;}
 
-a {color: var(--white, white); font-weight: 400;}
+a {color: var(--white); font-weight: 400;}
 
-a:hover {color: gold;}
+a:hover {color: var(--yellow);}
 
 a[target="_blank"]::after {
 	content: '';
@@ -66,7 +66,7 @@ a[target="_blank"]::after {
 	padding-right: 1em;
 }
 
-svg:hover {fill: gold;}
+svg:hover {fill: var(--yellow);}
 
 @keyframes gradient {
 	0% {background-position: 0% 50%;}
