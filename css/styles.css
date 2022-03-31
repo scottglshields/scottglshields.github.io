@@ -1,36 +1,30 @@
-	transform: var(--animation);
-	--animation: var(--downright);
+	--red-text: var(--white);
+
+	--orange-bg: var(--orange);
+	--orange-text: var(--black);
+
+	--yellow-bg: var(--yellow);
+	--yellow-text: var(--black);
+
+	--green-bg: var(--green);
+	--green-text: var(--white);
+
+	--blue-bg: var(--blue);
+	--blue-text: var(--white);
+
+	--purple-bg: var(--purple);
+	--purple-text: var(--white);
+
+	--clay-bg: var(--blue-pastel);
+	--clay-text: var(--black);
 }
 
-[id="blue"]:checked ~ main {
-	background: var(--bg);
-	--bg: var(--blue-bg);
-	color: var(--text);
-	--text: var(--blue-text);
-	transform: var(--animation);
-	--animation: var(--downright);
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
 }
 
-[id="purple"]:checked ~ main {
-	background: var(--bg);
-	--bg: var(--purple-bg);
-	color: var(--text);
-	--text: var(--purple-text);
-	box-shadow: ;
-	transform: var(--animation);
-	--animation: var(--downright);
-}
-
-[id="clay"]:checked ~ main {
-	background: var(--bg);
-	--bg: var(--clay-bg);
-	color: var(--text);
-	--text: var(--clay-text);
-	box-shadow: var(--box-shadow);
-	--box-shadow: var(--box-shadow-clay);
-	transform: var(--animation);
-	--animation: var(--scale);
-} /*
 body {
 	font-family: var(--font-sans);
 	padding: clamp(1.5rem, 5vw, 4rem);
@@ -38,5 +32,4 @@ body {
 	color: var(--text);
 	line-height: 1.4;
 	text-align: center;
-
-}*/
+}
