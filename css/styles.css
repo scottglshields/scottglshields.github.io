@@ -1,8 +1,6 @@
 :root {
 	--font-sans: "Outfit", sans-serif;
-	--font-system: -apple-system, BlinkMacSystemFont, segoe ui, Ubuntu,
-		Californian FB, avenir next, avenir, helvetica neue, helvetica, Roboto, noto,
-		arial, sans-serif;
+	--font-system: -apple-system, BlinkMacSystemFont, segoe ui, Ubuntu, Californian FB, avenir next, avenir, helvetica neue, helvetica, Roboto, noto, arial, sans-serif;
 
 	/* COLORS */
 	--black: #202124;
@@ -142,11 +140,7 @@ a {
 	border-radius: 0.5rem;
 	box-shadow: var(--box-shadow);
 	transition: var(--fast);
-	backdrop-filter: ;
-	-webkit-backdrop-filter: ;
-	background-color: ;
-	border: ;
-} 
+}
 
 a:hover,
 a:focus {
@@ -170,58 +164,7 @@ a:focus {
 #resume:hover {
 	transform: var(--animation);
 	filter: brightness(90%);
-}
 
-input {
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
-}
-
-label {
-	display: inline-block;
-	margin: 0.75rem 0.25rem 0;
-	transition: var(--fast);
-}
-
-label:hover,
-label:active,
-label:focus,
-label:checked,
-input:checked {
-	transform: var(--animation);
-	--animation: var(--rise);
-	border-radius: 2rem;
-}
-
-aside {
-	background: transparent; /*
-	bottom: 0;
-	margin: -0.25rem 0 2rem;*/
-	padding: 0.5rem;
-}a:hover,
-a:focus {
-	transform: var(--animation);
-	box-shadow: var(--box-shadow);
-	background: var(--bg);
-	color: var(--text);
-}
-
-#linkedin {
-	background: var(--linkedin);
-	color: var(--white);
-}
-
-#resume {
-	background: var(--resume);
-	color: var(--white);
-}
-
-#linkedin:hover,
-#resume:hover {
-	transform: var(--animation);
-	filter: brightness(90%);
 }
 
 input {
@@ -436,4 +379,4 @@ h1 span:nth-child(14) {
 	--box-shadow: var(--box-shadow-clay);
 	transform: var(--animation);
 	--animation: var(--scale);
-} 
+}
