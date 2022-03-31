@@ -146,7 +146,7 @@ a {
 	-webkit-backdrop-filter: ;
 	background-color: ;
 	border: ;
-}
+} 
 
 a:hover,
 a:focus {
@@ -184,6 +184,59 @@ label {
 	margin: 0.75rem 0.25rem 0;
 	transition: var(--fast);
 }
+
+label:hover,
+label:active,
+label:focus,
+label:checked,
+input:checked {
+	transform: var(--animation);
+	--animation: var(--rise);
+	border-radius: 2rem;
+}
+
+aside {
+	background: transparent; /*
+	bottom: 0;
+	margin: -0.25rem 0 2rem;*/
+	padding: 0.5rem;
+}a:hover,
+a:focus {
+	transform: var(--animation);
+	box-shadow: var(--box-shadow);
+	background: var(--bg);
+	color: var(--text);
+}
+
+#linkedin {
+	background: var(--linkedin);
+	color: var(--white);
+}
+
+#resume {
+	background: var(--resume);
+	color: var(--white);
+}
+
+#linkedin:hover,
+#resume:hover {
+	transform: var(--animation);
+	filter: brightness(90%);
+}
+
+input {
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+label {
+	display: inline-block;
+	margin: 0.75rem 0.25rem 0;
+	transition: var(--fast);
+}
+
 label:hover,
 label:active,
 label:focus,
@@ -211,6 +264,7 @@ h1 span {
 	display: inline-block;
 	animation: float 0.9s ease-in-out infinite;
 }
+
 h1 {
 	font-size: 5em;
 	font: bold 7.5vw/1.6 "Signika", sans-serif;
@@ -296,6 +350,7 @@ h1 span:nth-child(13) {
 h1 span:nth-child(14) {
 	animation-delay: 0.65s;
 }
+
 /* THEME ACTIVATION */
 [id="light"]:checked ~ main {
 	background: var(--bg);
@@ -381,15 +436,4 @@ h1 span:nth-child(14) {
 	--box-shadow: var(--box-shadow-clay);
 	transform: var(--animation);
 	--animation: var(--scale);
-} /*
-body {
-	font-family: var(--font-sans);
-	padding: clamp(1.5rem, 5vw, 4rem);
-	background: var(--bg);
-	color: var(--text);
-	line-height: 1.4;
-	text-align: center;
-
-}*/
-
-
+} 
