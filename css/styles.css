@@ -147,3 +147,249 @@ a {
 	background-color: ;
 	border: ;
 }
+
+a:hover,
+a:focus {
+	transform: var(--animation);
+	box-shadow: var(--box-shadow);
+	background: var(--bg);
+	color: var(--text);
+}
+
+#linkedin {
+	background: var(--linkedin);
+	color: var(--white);
+}
+
+#resume {
+	background: var(--resume);
+	color: var(--white);
+}
+
+#linkedin:hover,
+#resume:hover {
+	transform: var(--animation);
+	filter: brightness(90%);
+}
+
+input {
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+label {
+	display: inline-block;
+	margin: 0.75rem 0.25rem 0;
+	transition: var(--fast);
+}
+label:hover,
+label:active,
+label:focus,
+label:checked,
+input:checked {
+	transform: var(--animation);
+	--animation: var(--rise);
+	border-radius: 2rem;
+}
+
+aside {
+	background: transparent; /*
+	bottom: 0;
+	margin: -0.25rem 0 2rem;*/
+	padding: 0.5rem;
+}
+
+h1 {
+	font-size: 5em;
+	font: bold 7.5vw/1.6 "Signika", sans-serif;
+	user-select: none;
+}
+
+h1 span {
+	display: inline-block;
+	animation: float 0.9s ease-in-out infinite;
+}
+h1 {
+	font-size: 5em;
+	font: bold 7.5vw/1.6 "Signika", sans-serif;
+	user-select: none;
+}
+
+h1 span {
+	display: inline-block;
+	animation: float 0.9s ease-in-out infinite;
+}
+@keyframes float {
+	0%,
+	100% {
+		transform: none;
+	}
+	33% {
+		transform: translateY(-1px) rotate(-2deg);
+	}
+	66% {
+		transform: translateY(1px) rotate(2deg);
+	}
+}
+h1:hover span {
+	animation: bounce 0.6s;
+}
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translate(0);
+	}
+	25% {
+		transform: rotateX(20deg) translateY(2px) rotate(-3deg);
+	}
+	50% {
+		transform: translateY(-20px) rotate(3deg) scale(1.1);
+	}
+}
+
+span {
+	font-family: var(--font-sans);
+	color: var(--text);
+	text-shadow: 1px 1px var(--bg), 2px 2px var(--bg), 3px 3px var(--bg),
+		4px 4px var(--bg);
+	/*	filter: brightness(55%);*/
+}
+
+h1 span:nth-child(2) {
+	animation-delay: 0.05s;
+}
+h1 span:nth-child(3) {
+	animation-delay: 0.1s;
+}
+h1 span:nth-child(4) {
+	animation-delay: 0.15s;
+}
+h1 span:nth-child(5) {
+	animation-delay: 0.2s;
+}
+h1 span:nth-child(6) {
+	animation-delay: 0.25s;
+}
+h1 span:nth-child(7) {
+	animation-delay: 0.3s;
+}
+h1 span:nth-child(8) {
+	animation-delay: 0.35s;
+}
+h1 span:nth-child(9) {
+	animation-delay: 0.4s;
+}
+h1 span:nth-child(10) {
+	animation-delay: 0.45s;
+}
+h1 span:nth-child(11) {
+	animation-delay: 0.5s;
+}
+h1 span:nth-child(12) {
+	animation-delay: 0.55s;
+}
+h1 span:nth-child(13) {
+	animation-delay: 0.6s;
+}
+h1 span:nth-child(14) {
+	animation-delay: 0.65s;
+}
+/* THEME ACTIVATION */
+[id="light"]:checked ~ main {
+	background: var(--bg);
+	--bg: var(--light-bg);
+	color: var(--text);
+	--text: var(--light-text);
+	transform: var(--animation);
+	--animation: var(--downright);
+}
+
+[id="dark"]:checked ~ main {
+	background: var(--bg);
+	--bg: var(--dark-bg);
+	color: var(--text);
+	--text: var(--dark-text);
+	box-shadow: var(--box-shadow);
+	--box-shadow: var(--box-shadow-darker);
+	transform: var(--animation);
+	--animation: var(--downright);
+}
+
+[id="red"]:checked ~ main {
+	background: var(--bg);
+	--bg: var(--red-bg);
+	color: var(--text);
+	--text: var(--red-text);
+	transform: var(--animation);
+	--animation: var(--downright);
+}
+
+[id="orange"]:checked ~ main {
+	background: var(--bg);
+	--bg: var(--orange-bg);
+	color: var(--text);
+	--text: var(--orange-text);
+	transform: var(--animation);
+	--animation: var(--downright);
+}
+
+[id="yellow"]:checked ~ main {
+	background: var(--bg);
+	--bg: var(--yellow-bg);
+	color: var(--text);
+	--text: var(--yellow-text);
+	transform: var(--animation);
+	--animation: var(--downright);
+}
+
+[id="green"]:checked ~ main {
+	background: var(--bg);
+	--bg: var(--green-bg);
+	color: var(--text);
+	--text: var(--green-text);
+	transform: var(--animation);
+	--animation: var(--downright);
+}
+
+[id="blue"]:checked ~ main {
+	background: var(--bg);
+	--bg: var(--blue-bg);
+	color: var(--text);
+	--text: var(--blue-text);
+	transform: var(--animation);
+	--animation: var(--downright);
+}
+
+[id="purple"]:checked ~ main {
+	background: var(--bg);
+	--bg: var(--purple-bg);
+	color: var(--text);
+	--text: var(--purple-text);
+	box-shadow: ;
+	transform: var(--animation);
+	--animation: var(--downright);
+}
+
+[id="clay"]:checked ~ main {
+	background: var(--bg);
+	--bg: var(--clay-bg);
+	color: var(--text);
+	--text: var(--clay-text);
+	box-shadow: var(--box-shadow);
+	--box-shadow: var(--box-shadow-clay);
+	transform: var(--animation);
+	--animation: var(--scale);
+} /*
+body {
+	font-family: var(--font-sans);
+	padding: clamp(1.5rem, 5vw, 4rem);
+	background: var(--bg);
+	color: var(--text);
+	line-height: 1.4;
+	text-align: center;
+
+}*/
+
+
