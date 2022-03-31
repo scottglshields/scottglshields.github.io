@@ -1,6 +1,8 @@
 :root {
 	--font-sans: "Outfit", sans-serif;
-	--font-system: -apple-system, BlinkMacSystemFont, segoe ui, Ubuntu, Californian FB, avenir next, avenir, helvetica neue, helvetica, Roboto, noto, arial, sans-serif;
+	--font-system: -apple-system, BlinkMacSystemFont, segoe ui, Ubuntu,
+		Californian FB, avenir next, avenir, helvetica neue, helvetica, Roboto, noto,
+		arial, sans-serif;
 
 	/* COLORS */
 	--black: #202124;
@@ -128,8 +130,6 @@ a {
 	text-decoration: none;
 	border: none;
 	cursor: pointer;
-	border: var(--border);
-	background: var(--bg);
 	color: var(--text);
 	padding: 1rem 2rem;
 	font-size: 1.25rem;
@@ -164,7 +164,6 @@ a:focus {
 #resume:hover {
 	transform: var(--animation);
 	filter: brightness(90%);
-
 }
 
 input {
@@ -195,17 +194,6 @@ aside {
 	bottom: 0;
 	margin: -0.25rem 0 2rem;*/
 	padding: 0.5rem;
-}
-
-h1 {
-	font-size: 5em;
-	font: bold 7.5vw/1.6 "Signika", sans-serif;
-	user-select: none;
-}
-
-h1 span {
-	display: inline-block;
-	animation: float 0.9s ease-in-out infinite;
 }
 
 h1 {
