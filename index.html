@@ -323,11 +323,15 @@ h1 {
 
 h1 span {
 	display: inline-block;
-	animation: var(--h1-animation);
+	animation: float 0.9s ease-in-out infinite;
 }
 
-@keyframes float {var(--float-kf);}
-
+@keyframes float {
+	0%,100% {transform: none;}
+	33% {transform: translateY(-1px) rotate(-2deg);}
+	66% {transform: translateY(1px) rotate(2deg);}
+}
+	    
 h1:hover span {animation: var(--h1-animation-hover);}
 
 @keyframes bounce {var(--bounce-kf);}
