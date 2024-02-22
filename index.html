@@ -262,8 +262,8 @@ a:focus {
 
 #linkedin {
 	background: var(--linkedin);
-	color: var(--white);
-	transform: var(--animation);
+	color: var(--white);/*
+	transform: var(--animation);*/
 	
 }
 
@@ -273,11 +273,15 @@ a:focus {
 }
 
 #linkedin:hover,
-#resume:hover {
+#resume:hover {/*
 	transform: var(--link-animation);/*
-	--animation: var(--rise);*/
-	filter: brightness(90%);
-}
+	--animation: var(--rise);*//*
+	filter: brightness(90%);*/
+transform:scaleX(1.1);
+	transform:scaleY(1.1);
+	transform:rotate(2deg);
+ }
+
 
 input {
 	opacity: 0;
@@ -471,7 +475,24 @@ h1 span:nth-child(14) {
 
 
 
-
+			button{
+				display: inline-flex; 
+overflow: hidden; 
+position: relative; 
+padding-left: 1.5rem;
+padding-right: 1.5rem;  box-shadow:5px_5px_rgb(82_82_82);
+justify-content: center; 
+align-items: center; 
+border-radius: 0.375rem; 
+border-width: 1px; 
+height: 3rem; 
+font-weight: 500; 
+background-color: transparent; 
+transition-property: all;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 300ms; 
+transition-duration: 100ms; 
+			}
 
 
 
@@ -921,9 +942,32 @@ h2{text-shadow:
 
 		<p>My work is <abbr title="me no can share, sorry 😔">proprietary <sup>👀</sup></abbr>, so ...</p>
 
-		<a id="linkedin" href="http://linkedin.com/in/scottglshields" target="_blank" rel="noopener">Reach out on Linkedin</a>
-		<a id="resume" href="https://docs.google.com/document/d/16CvO_Ydwwifax_h0UICMohZ8ZmETUpz-eoox00_0kuU/preview" target="_blank" rel="noopener">Check out my Résumé</a>
-
+		<a id="linkedin" href="http://linkedin.com/in/scottglshields" target="_blank" rel="noopener" style="padding-top: 0.75rem;
+padding-bottom: 0.75rem; 
+padding-left: 2rem;
+padding-right: 2rem; 
+border-radius: 0.25rem; 
+font-size: 0.875rem;
+line-height: 1.25rem; 
+font-weight: 500; 
+color: #ffffff; 
+transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 300ms; margin-block-end:1rem;background-color:#0077b5;">Reach out on Linkedin</a>
+		
+		<a id="resume" href="https://docs.google.com/document/d/16CvO_Ydwwifax_h0UICMohZ8ZmETUpz-eoox00_0kuU/preview" target="_blank" rel="noopener" style="padding-top: 0.75rem;
+padding-bottom: 0.75rem; 
+padding-left: 2rem;
+padding-right: 2rem; 
+border-radius: 0.25rem; 
+font-size: 0.875rem;
+line-height: 1.25rem; 
+font-weight: 500; 
+color: #ffffff; 
+transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 300ms; margin-block-end:1rem;">Check out my Résumé</a>
+		
 		<aside>
 			<label for="light">⚪</label>
 			<label for="dark">⚫</label>
